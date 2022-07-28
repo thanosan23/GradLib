@@ -1,0 +1,26 @@
+digraph {
+	graph [rankdir=TB]
+	140417283540544 [label="576.00, grad: 1.00" fillcolor="#90ee90" style=filled]
+	"140417283540544^2" [label="^2" fillcolor="#ff7f7f" style=filled]
+	"140417283540544^2" -> 140417283540544
+	140417293357648 [label="2.00, grad: 576.00" fillcolor="#90ee90" style=filled]
+	140417293297744 [label="5.00, grad: 0.20" fillcolor="#90ee90" style=filled]
+	140417283541120 [label="0.20, grad: 5.00" fillcolor="#90ee90" style=filled]
+	140417293357264 [label="24.00, grad: 48.00" fillcolor="#90ee90" style=filled]
+	"140417293357264*" [label="*" fillcolor="#ff7f7f" style=filled]
+	"140417293357264*" -> 140417293357264
+	140417283541216 [label="1.00, grad: 1.00" fillcolor="#90ee90" style=filled]
+	"140417283541216*" [label="*" fillcolor="#ff7f7f" style=filled]
+	"140417283541216*" -> 140417283541216
+	140417283541312 [label="577.00, grad: 1.00" fillcolor="#90ee90" style=filled]
+	"140417283541312+" [label="+" fillcolor="#ff7f7f" style=filled]
+	"140417283541312+" -> 140417283541312
+	140417294817648 [label="12.00, grad: 96.00" fillcolor="#90ee90" style=filled]
+	140417293297744 -> "140417283541216*"
+	140417283541120 -> "140417283541216*"
+	140417283541216 -> "140417283541312+"
+	140417283540544 -> "140417283541312+"
+	140417293357648 -> "140417293357264*"
+	140417294817648 -> "140417293357264*"
+	140417293357264 -> "140417283540544^2"
+}
